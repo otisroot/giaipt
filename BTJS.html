@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Giải Phương Trình Bậc 2</title>
+    <style>
+        div.wrap {
+            width: 600px;
+            margin: auto;
+            margin-top: 5%;
+            border: 2px solid #fff;
+            box-shadow: 13px 17px 23px 1px rgba(0, 0, 0, 0.96);
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        body {
+            background-color: #ccc;
+        }
+        
+        marquee {
+            font-size: 20px;
+        }
+        
+        div.form-group {
+            padding: 10px 20px;
+        }
+        
+        p.result {
+            color: green;
+        }
+        
+        small.error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="wrap">
+            <marquee behavior="" direction="">Giải Phương Trình Bậc 2</marquee>
+            <form>
+                <div class="form-group">
+                    <label for="a">nhập số a</label>
+                    <input type="text" class="form-control" id="a" aria-describedby="emailHelp">
+                    <small id="aHelp" class="error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="b">nhập số b</label>
+                    <input type="text" class="form-control" id="b">
+                    <small id="bHelp" class="error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="c">nhập số c</label>
+                    <input type="text" class="form-control" id="c">
+                    <small id="cHelp" class="error"></small>
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-primary">kết quả</button>
+                    <button type="reset" class="btn btn-danger">reset</button>
+                </div>
+                <div class="form-group text-center">
+                    <p class="result"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="btjs.js"></script>
+</body>
+
+</html>
